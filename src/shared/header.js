@@ -4,4 +4,4 @@ const Header = () => (
   <div>Header</div>
 )
 
-export default ProjectList;
+export default Header;

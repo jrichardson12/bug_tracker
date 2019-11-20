@@ -1,8 +1,11 @@
 import React from 'react';
-import ProjectView from './project_view.js'
 
-const ProjectView = () => (
-  <div>Project View</div>
+const ProjectView = ({projects}) => (
+  <ul>
+    {projects.map((project) =>
+      <li key={project.id}>{project.name} | {project.img} | {project.lead}</li>
+    )}
+  </ul>
 )
 
 export default ProjectView;

@@ -4,4 +4,4 @@ const Nav = () => (
   <Nav />
 )
 
-export default ProjectList;
+export default Nav;
