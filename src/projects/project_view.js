@@ -1,8 +1,15 @@
 import React from 'react';
-import ProjectView from './project_view.js'
+import Card from 'react-bootstrap/Card';
 
-const ProjectView = () => (
-  <div>Project View</div>
+const ProjectView = ({name, img, lead, desc}) => (
+      <Card border="dark">
+        <Card.Img variant="top" src={img}/>
+        <Card.Body>
+          <Card.Title>{name}</Card.Title>
+          <Card.Subtitle>{lead}</Card.Subtitle>
+          <Card.Text>{desc}</Card.Text>
+        </Card.Body>
+      </Card>
 )
 
 export default ProjectView;
