@@ -1,10 +1,8 @@
 import React from 'react';
-import IncidentView from './incident_view.js';
 import Table from 'react-bootstrap/Table';
-import { Route, Link, BrowserRouter as Router, Switch } from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
-const IncidentList = ({props, incidents}) => (
-  <Router>
+const IncidentList = ({incidents}) => (
   <Table striped bordered hover>
     <thead>
       <tr>
@@ -22,7 +20,7 @@ const IncidentList = ({props, incidents}) => (
     <tbody>
     {incidents.map((incident) =>
       <tr key={incident.id}>
-        <td><Link to={`/incident/${incident.id}`}>{incident.id}</Link></td>
+        <td><Link to={`/Ticket/${incident.id}`}>{incident.id}</Link></td>
         <td>{incident.project_id}</td>
         <td>{incident.short_desc}</td>
         <td>{incident.category}</td>
@@ -35,10 +33,6 @@ const IncidentList = ({props, incidents}) => (
     )}
     </tbody>
   </Table>
-  <Switch>
-              <Route path={`/incident/:id`} render={() => <IncidentView />} />
-              </Switch>
-  </Router>
 )
 
 export default IncidentList;

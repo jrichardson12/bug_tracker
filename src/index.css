@@ -4,10 +4,42 @@ body {
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: antialiased;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.dark-primary-color-bg {
+  background-color: #0288D1;
+}
+
+.light-primary-color-bg {
+  background-color: #b3e5fc;
+}
+
+.primary-color-bg {
+  background-color: #03a9f4;
+}
+
+.accent-color {
+  background-color: #ffc107;
+}
+
+.primary-text {
+  color: #212121;
+}
+
+.icons-text {
+  color: #ffffff;
+}
+
+.secondary-text {
+  color: #757575;
+}
+
+.divider-color {
+  background-color: #bdbdbd;
 }
